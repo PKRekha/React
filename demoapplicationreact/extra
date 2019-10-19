@@ -1,0 +1,8 @@
+this first application we created using seed called
+
+create-react-app
+
+this, we need to install as a global package, and then we can 
+create n number of application using it.
+
+by defalut the root file for all the react app is index.js
