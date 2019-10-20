@@ -1,0 +1,28 @@
+import React, {Component} from 'react';
+
+class HeaderNews extends Component{
+    render(){
+            const styles={
+                header:{
+                    background: 'teal'
+                },
+                logo:{
+                    color: 'white',
+                    fontSize: '35px',
+                    textAlign: 'center'
+                }
+            }
+
+            return (
+              <header style={styles.header}>
+                <div style={styles.logo}>Logo</div>
+                <center>
+                  <input />
+                </center>
+                <hr />
+              </header>
+            );
+    }
+}
+
+export default HeaderNews;

@@ -1,0 +1,48 @@
+it is the extra file for the things that I have done in this example.
+
+actually, to add css styles, we can do that different apporaches.
+
+approach one:
+
+we can add css using object itself in the component itself like below.
+
+   const styles={
+                header:{
+                    background: 'teal'
+                },
+                logo:{
+                    color: 'white',
+                    fontSize: '35px',
+                    textAlign: 'center'
+                }
+            }
+
+we can use it using:
+
+ <header style={styles.header}>
+                <div style={styles.logo}>Logo</div>
+</header>
+
+-----------------------------------------------------
+
+second way of adding css is to keep a public styles.css file, and we can add
+properties to it and add that file path in index.html file.
+
+----------------------------------------------------------
+
+third way of doing it is, if we want to add styels to a partilcular component, you can add 
+css for that particular js file itself, and then we can access it by importing in js file.
+
+in this thrid apporach, one more inp thing to know is,
+
+if we are adding as a class name, then usually we will add as 
+<div class='logo/>
+and then in css
+.logo{
+
+}
+ we will use like above, and in react, even though we didn't get any error, we shouldn't
+ give it like that, it is because, in react 'class' is a reserved keyword, 
+ so that we should not use it as class, instead we can use it as 'className'
+
+ <div className='logo'/>
